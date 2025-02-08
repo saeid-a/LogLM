@@ -10,9 +10,9 @@ finetuning_type: full
 dataset: LogLM_train
 template: alpaca
 cutoff_len: 2048
-max_samples: 512
+max_samples: 128
 overwrite_cache: true
-preprocessing_num_workers: 16
+preprocessing_num_workers: 2
 deepspeed: examples/deepspeed/ds_z3_config.json  # choices: [ds_z0_config.json, ds_z2_config.json, ds_z3_config.json]
 
 ### output
