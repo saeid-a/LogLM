@@ -9,7 +9,7 @@ finetuning_type: full
 ### dataset
 dataset: LogLM_train
 template: alpaca
-cutoff_len: 2048
+cutoff_len: 1024
 max_samples: 128
 overwrite_cache: true
 preprocessing_num_workers: 2
@@ -18,12 +18,12 @@ deepspeed: examples/deepspeed/ds_z3_config.json  # choices: [ds_z0_config.json, 
 ### output
 output_dir: saves/llama3-8b/full/sft
 logging_steps: 10
-save_steps: 500
+save_steps: 100
 plot_loss: true
 overwrite_output_dir: true
 
 ### train
-per_device_train_batch_size: 16
+per_device_train_batch_size: 4
 gradient_accumulation_steps: 1
 learning_rate: 2e-5
 num_train_epochs: 6
