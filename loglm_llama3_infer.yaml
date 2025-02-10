@@ -1,0 +1,6 @@
+
+model_name_or_path:  ./Llama-3.2-3B-Instruct
+adapter_name_or_path: saves/Llama-3.2-3B-Instruct/full/sft
+template: llama3
+infer_backend: huggingface  # choices: [huggingface, vllm]
+
